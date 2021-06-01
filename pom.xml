@@ -12,7 +12,7 @@
 	<artifactId>personapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>personapi</name>
-	<description>Person API project</description>
+	<description>Person API project for DIO</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
