@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-
+import java.util.List;
+//parei na parte 9(a assistir)
 @RestController
 @RequestMapping("/api/v1/people")//acesso principal a aplicação
 public class PersonController {
@@ -25,5 +26,10 @@ public class PersonController {
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO createPerson(@RequestBody @Valid PersonDTO personDTO) {
         return personService.createPerson(personDTO);
+    }
+
+    @GetMapping
+    public List<PersonDTO> listAll(){
+       return personService.listAll();
     }
 }
